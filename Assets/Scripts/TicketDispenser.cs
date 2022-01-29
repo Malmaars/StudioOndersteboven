@@ -11,6 +11,6 @@ public class TicketDispenser : MonoBehaviour
     {
         Debug.Log("Clicky");
         //dispense ticket
-        Instantiate(ticket, ticketLocation.position, ticketLocation.rotation);
+        Instantiate(ticket, ticketLocation.position, ticketLocation.rotation, null);
     }
 }

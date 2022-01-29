@@ -7,8 +7,10 @@ public class NPC : MonoBehaviour
 {
     int lineNumber;
     public string[] myLine;
-    Vector3 simplifiedPosition;
+    public Vector3 simplifiedPosition;
     bool talking;
+
+    public Ticket myTicket;
     // Start is called before the first frame update
     void Start()
     {

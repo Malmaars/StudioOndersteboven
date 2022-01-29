@@ -166,8 +166,16 @@ public class Player : MonoBehaviour
                 //maak een waaier van tickets?
 
                 //change this (hand.transform) to another transform later
+                inventory[i].transform.parent = hand.transform;
                 inventory[i].transform.position = hand.transform.GetChild(0).transform.position;
-                inventory[i].transform.rotation = hand.transform.GetChild(0).transform.rotation;
+                //inventory[i].transform.rotation = hand.transform.GetChild(0).transform.rotation;
+
+                if (inventory.Count == 2)
+                {
+                    inventory[i].transform.rotation = Quaternion.Euler((20 * (inventory.Count - 1)) * (Mathf.Pow(-1, i + 1)), Camera.main.transform.right.y, Camera.main.transform.right.z);
+                }
+                else
+                    inventory[i].transform.rotation = Quaternion.Euler((20 * (inventory.Count - 1)) * (i - 1), Camera.main.transform.right.y, Camera.main.transform.right.z);
             }
             //max 3 tickets
         }

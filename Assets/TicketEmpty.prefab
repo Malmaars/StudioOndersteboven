@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2592816556965626922}
+  - component: {fileID: 550416838964263648}
+  - component: {fileID: 1441994223418526086}
   m_Layer: 0
   m_Name: TicketEmpty
   m_TagString: Untagged
@@ -31,6 +33,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &550416838964263648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592816556965626923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4745338f9884545baf9416159d60e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1441994223418526086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592816556965626923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.005, y: 0.06920398, z: 0.029256115}
+  m_Center: {x: 0, y: 0.034170005, z: -0.00017565954}
 --- !u!1001 &2592816555543998949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,7 +113,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2347115821838098768, guid: 7fc29402219a1c2458692be9fb2264bf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7fc29402219a1c2458692be9fb2264bf, type: 3}
 --- !u!4 &8846648072046478911 stripped
 Transform:

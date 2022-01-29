@@ -21,5 +21,19 @@ public class Ticket : MonoBehaviour
             }
         }
 
+        else
+        {
+            //give ticket to NPC if they are in view.
+            NPC[] allNPCs = FindObjectsOfType<NPC>();
+
+            foreach(NPC npc in allNPCs)
+            {
+                if(npc.myTicket == null)
+                {
+                    //they don't have a ticket yet
+                }
+            }
+        }
+
     }
 }
